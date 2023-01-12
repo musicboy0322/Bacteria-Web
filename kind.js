@@ -19,6 +19,6 @@ const typeList = {
         "Infected tissue", "Fleid  Soil", "Wild type", "Fresh water", "Sea water", "Others"],
     "Crop/Target": ["Chenopodium formosanum (Red quinoa)", "Capsicum annuum (Chili)", "Oryza sativa (Paddy rice)",
         "Zea mays (Corn)", "Glycine max (Soy bean)", "Sewage", "Alkaline soil"]
-}
+};
 
 module.exports = typeList;
