@@ -1,5 +1,5 @@
 const typeList = {
-    "Name": ["PGPR", "Biological Control", "Symbiotic", "Symbiotic", "Symbiotic", "Other"],
+    "Purpose": ["PGPR", "Biological Control", "Symbiotic", "Symbiotic", "Symbiotic", "Other"],
     "Specise":
         [
             "Bacteria", "Fungal", "Bacteria Grams positive", "Bacteria Grams nagitive", "Algae", "other",
@@ -11,8 +11,8 @@ const typeList = {
         "Halotolerence": ["Phosphate solubilization", "Heavy metal tolerence", "ACC deaminase", "Others"],
         "Water & Temperature Stress": ["Flood", "Drought", "Heat tolerence", "Cold tolerence", "Others"],
         "Pesticide": ["Insecticide", "Chitinase", "Protease", "Fungicide", "Bactericide", "Others"],
-        "Hemolysis & Pathogenic": ["(β)= Beta hemolysis (complete hemolysis)", "(α)= Alpha hemolysis (partial hemolysis)",
-            "(γ)= Gamma hemolysis (No hemolysis)", "Non-pathogenic", "Pathogenic"],
+        "Hemolysis & Pathogenic": ["Beta hemolysis (complete hemolysis)", "Alpha hemolysis (partial hemolysis)",
+            "Gamma hemolysis (No hemolysis)", "Non-pathogenic", "Pathogenic"],
         "Others": ["Unknown", "Growth Promotion (Reason Unknown)"]
     },
     "Resource": ["Purchased & Recived from other institutes", "Root surface", "Leaf surface", "Root tissue", "Leaf tissue",

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacteria Page</title>
+
+    <link ref="stylesheet" href="../assets/windows.css">
+</head>
+<body>
+    <!-- <button>Add New Data</button> -->
+
+    <div class="addWindow">
+        <form action="" method="post">
+        
+            <label>Purpose: </label> 
+                <% for(let i = 0; i < kind['Purpose'].length; i++) { %>
+                    <label>
+                        <input type="radio" name="purpose" value="<%= kind['Purpose'][i] %>"> <%= kind["Purpose"][i] %>
+                    </label>
+                <% } %>
+                <br>
+    
+            <label>Specise: </label> 
+                <% for(let i = 0; i < kind['Specise'].length; i++) { %>
+                    <label>
+                        <input type="radio" name="specise" value="<%= kind['Specise'][i] %>"> <%= kind["Specise"][i] %>
+                    </label>
+                <% } %>
+                <br>
+    
+            <label>Function: </label><br>
+                <label>
+                    &ensp;Plant Growth Substances: 
+                </label>
+                <% for(let i = 0; i < kind['Function']['Plant Growth Substances'].length; i++) { %>
+                    <input type="checkbox" name="function1" value="<%= kind['Function']['Plant Growth Substances'][i] %>"> 
+                        <%= kind["Function"]['Plant Growth Substances'][i] %>
+                <% } %>
+                <br>
+                <label>
+                    &ensp;Nutritions Uptake & Chelators: 
+                </label>
+                <% for(let i = 0; i < kind['Function']['Nutritions Uptake & Chelators'].length; i++) { %>
+                    <input type="checkbox" name="function2" value="<%= kind['Function']['Nutritions Uptake & Chelators'][i] %>"> 
+                        <%= kind["Function"]['Nutritions Uptake & Chelators'][i] %>
+                <% } %>
+                <br>
+                <label>
+                    &ensp;Halotolerence: 
+                </label>
+                <% for(let i = 0; i < kind['Function']['Halotolerence'].length; i++) { %>
+                    <input type="checkbox" name="function3" value="<%= kind['Function']['Halotolerence'][i] %>"> 
+                        <%= kind["Function"]['Halotolerence'][i] %>
+                <% } %>
+                <br>
+                <label>
+                    &ensp;Water & Temperature Stress: 
+                </label>
+                <% for(let i = 0; i < kind['Function']['Water & Temperature Stress'].length; i++) { %>
+                    <input type="checkbox" name="function4" value="<%= kind['Function']['Water & Temperature Stress'][i] %>"> 
+                        <%= kind["Function"]['Water & Temperature Stress'][i] %>
+                <% } %>
+                <br>
+                <label>
+                    &ensp;Pesticide: 
+                </label>
+                <% for(let i = 0; i < kind['Function']['Pesticide'].length; i++) { %>
+                    <input type="checkbox" name="function5" value="<%= kind['Function']['Pesticide'][i] %>"> 
+                        <%= kind["Function"]['Pesticide'][i] %>
+                <% } %>
+                <br>
+                <label>
+                    &ensp;Hemolysis & Pathogenic: 
+                </label>
+                <% for(let i = 0; i < kind['Function']['Hemolysis & Pathogenic'].length; i++) { %>
+                    <input type="checkbox" name="function6" value="<%= kind['Function']['Hemolysis & Pathogenic'][i] %>"> 
+                        <%= kind["Function"]['Hemolysis & Pathogenic'][i] %>
+                <% } %>
+                <br>
+                <label>
+                    &ensp;Others: 
+                </label>
+                <% for(let i = 0; i < kind['Function']['Others'].length; i++) { %>
+                    <input type="checkbox" name="function7" value="<%= kind['Function']['Others'][i] %>"> 
+                        <%= kind["Function"]['Others'][i] %>
+                <% } %>
+                <br>
+            
+            <label>Resource: </label> 
+                <% for(let i = 0; i < kind['Resource'].length; i++) { %>
+                    <label>
+                        <input type="radio" name="resource" value="<%= kind['Resource'][i] %>"> <%= kind["Resource"][i] %>
+                    </label>
+                <% } %>
+                <br>
+            
+            <label>Resource: </label> 
+                <% for(let i = 0; i < kind['Crop/Target'].length; i++) { %>
+                    <label>
+                        <input type="radio" name="crop/target" value="<%= kind['Crop/Target'][i] %>"> <%= kind["Crop/Target"][i] %>
+                    </label>
+                <% } %>
+                <br>
+            
+            <input type="submit">
+
+        </form>
+    </div>
+
+</body>
+</html>
