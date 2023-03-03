@@ -7,7 +7,8 @@ const db = require('../database/bacteriaDatabase');
 const BacteriaData = require('../database/Data');
 
 base.get('/', async (req, res) => {
-    res.render('home', { kind: kind });
+    let data = await BacteriaData.find();
+    res.render('home', { kind: kind, data: data });
 });
 
 base.post('/', encoder, async (req, res) => {

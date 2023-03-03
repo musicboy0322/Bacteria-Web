@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainPage {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    flex-flow: column;
+    margin: 0;
+    position: fixed;
+    right: 38px;
+    top: 66px;
+}
+
+.displaySurface {
+    width: 1362px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.bacteriaTable {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    height: fit-content;
+    border-collapse: collapse;
+}
+
+tr.head th {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    position: sticky;
+}
+
+tr.head th:nth-child(4) {
+    width: 180px;
+}
+
+tr.head th:nth-child(7) {
+    width: 80px;
+}
+
+tr.head th:nth-child(8) {
+    width: 150px;
+}
+
+tr.reloadData td {
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.buttons {
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.buttonsSetting {
+    display: flex;
+    justify-content: center;
+}

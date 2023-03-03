@@ -1,5 +1,5 @@
 .addWindow {
-    width: 1000px;
+    width: 1200px;
     height: 530px;
     padding: 5px;
     margin: 5px;
@@ -33,17 +33,6 @@ input.size {
     font-size: 14px;
 }
 
-.buttonsSetting {
-    display: flex;
-    justify-content: center;
-
-}
-
-.buttons {
-    width: 80px;
-    border-radius: 6px;
-    font-size: 15px;
-}
 
 .title {
     color: blue;

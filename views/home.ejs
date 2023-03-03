@@ -6,12 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bacteria Page</title>
     <link rel="stylesheet" href="../assets/windows.css">
+    <link rel="stylesheet" href="../assets/main.css">
 </head>
 <body>
+    <div class="mainPage">
+        <div class="displaySurface">
+            <table class="bacteriaTable">
+                <tr class="head">
+                    <th>Name</th>
+                    <th>Purpose</th>
+                    <th>Specise</th>
+                    <th>Function</th>
+                    <th>Resource</th>
+                    <th>Target</th>
+                    <th>Reference</th>
+                    <th>PS</th>
+                </tr>
+                <% for(let i = 0; i < data.length; i++) { %>
+                        <tr class="reloadData">
+                            <td><%= data[i]['name'] %></td>
+                            <td><%= data[i]['purpose'] %></td>
+                            <td><%= data[i]['specise'] %></td>
+                            <td><%= data[i]['function'] %></td>
+                            <td><%= data[i]['resource'] %></td>
+                            <td><%= data[i]['target'] %></td>
+                            <td><%= data[i]['reference'] %></td>
+                            <td><%= data[i]['ps'] %></td>
+                        </tr>
+                <% } %>
+            </table>
+        </div>
 
+        <div class="buttonsSetting">
+            <button class="buttons" onclick="openAddWindow()">Add Data</button>
+            <button class="buttons">Delete Data</button>
+        </div>
 
-
-    <button onclick="openAddWindow()">Add Data</button>
+    </div>
+    
 
     <div class="addWindow">
         <form action="" method="post" class="addForm">
@@ -156,6 +188,7 @@
                 <button class="buttons" type="button" onclick="closeAddWindow()">Cancel</button>
                 <button class="buttons" type="submit">Confrim</button>
             </div>
+
         </form>
     </div>
 
