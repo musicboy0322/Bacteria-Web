@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const baseRouter = require('./baseRouter');
+const base = require('./routers/base');
 
-app.set('views', './views')
 app.set('view engine', 'ejs');
 
 app.use('/assets', express.static('assets'));
-app.use('/', baseRouter);
+
+app.use('/', base);
 
 app.listen(3000);

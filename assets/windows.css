@@ -1,3 +1,54 @@
-div .addWindow {
-    background-color: aquamarine;
+.addWindow {
+    width: 1000px;
+    height: 530px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    position: fixed;
+    border-radius: 10px;
+    top: 15%;
+    left: 15%;
+    visibility: hidden;
+}
+
+.openAddWindow {
+    visibility: visible;
+}
+
+form.addForm {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+}
+
+form.addForm div {
+    flex-grow: 2;
+}
+
+form.addForm div:last-child {
+    flex-grow: 0;
+}
+
+input.size {
+    font-size: 14px;
+}
+
+.buttonsSetting {
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons {
+    width: 80px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.title {
+    color: blue;
+}
+
+.secTitle {
+    color: #2986cc;
 }
