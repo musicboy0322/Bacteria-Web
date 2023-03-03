@@ -197,12 +197,16 @@
 <script>
     function openAddWindow() {
         let window = document.getElementsByClassName('addWindow')[0];
+        let background = document.getElementsByClassName('mainPage')[0];
         window.classList.add('openAddWindow');
+        background.classList.add('background');
     }
 
     function closeAddWindow() {
         let window = document.getElementsByClassName('addWindow')[0];
+        let background = document.getElementsByClassName('mainPage')[0];
         window.classList.remove('openAddWindow');
+        background.classList.remove('background');
     }
 </script>
 
