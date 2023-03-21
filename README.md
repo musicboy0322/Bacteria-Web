@@ -4,7 +4,7 @@
 * 使用工具：
   * 網頁製作：HTML、CSS、JavaScript
   * 後端框架：Node.js
-  * 資料庫：MongoDb
+  * 資料庫：MongoDB
   
 * 使用技術：Express + EJS + Mongoose
 
